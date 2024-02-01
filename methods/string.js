@@ -49,3 +49,5 @@ console.log(uzduotis12);
 
 const uzduotis2 = `Asmens ${name1} ${surname1} inicialai yra ${name1[0]}. ${surname1[0]}.`;
 console.log(uzduotis2);
+
+const bandymas = x3x;
