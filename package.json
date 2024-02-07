@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "JSmini":"node --watch ./namu-darbai/JSmini.js",
+    "ternary":"node --watch ./compare/ternary.js",
+    "if":"node --watch ./compare/if.js",
+    "namu:darbai":"node --watch ./data-types/namu-darbai.js",
     "boolean":"node --watch ./data-types/boolean.js",
     "methods:string":"node --watch ./methods/string.js",
     "string":"node --watch ./data-types/string.js",
