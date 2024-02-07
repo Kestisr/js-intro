@@ -69,9 +69,49 @@ const a2 = 5;
 const b2 = 7;
 
 if (a2 > b2) {
-    console.log('pomidoras')
+    console.log(a2 + 'yra didsnis')
 } else {
-    console.log('Bandykite kitą kartą')
+    console.log(a2 + 'yra mažesnis')
+}
+
+
+let g2 = a2;
+if (4 > 6) {
+    g2 = ' a2';
+} else {
+    g2 = ' b2';
+}
+
+console.log('Didesnis yra' + g2);
+console.clear();
+
+if (a2 === b2) {
+    console.log('taip lygūs')
+} else {
+    console.log('ne nelygūs')
+}
+
+let g3 = a2;
+if (a2 === b2) {
+    g3 = 'taip lygūs';
+} else {
+    g3 = 'ne nelygūs';
+}
+
+console.log(g3);
+console.clear();
+
+if (a2 !== b2) {
+    console.log('ne  nelygūs')
+} else {
+    console.log('lygūs')
+}
+
+let g4 = a2;
+if (a2 !== b2) {
+    g4 = 'ne  nelygūs';
+} else {
+    g4 = 'lygūs';
 }
 
 
