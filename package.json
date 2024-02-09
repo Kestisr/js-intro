@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "for":"node --watch ./loops/for.js",
+    "array":"node --watch ./data-types/array.js",
+    "testas":"node --watch ./namu-darbai/testas.js",
     "typeof":"node --watch ./compare/typeof.js",
     "function":"node --watch ./Functions/function.js",
     "JSmini":"node --watch ./namu-darbai/JSmini.js",

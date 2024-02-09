@@ -4,15 +4,15 @@
 /*
 Busimos temos:
 - duomenų tipai
-    - skaiciai
-    - tekstas
-    - logines reiksmes
-    - undefined
-    - sarasas
+    + skaiciai
+    + tekstas
+    + logines reiksmes
+    + undefined
+    - sąrašas
     - objektas
 - salygos (if)
-    - if
-    - ternary
+    + if
+    + ternary
     - switch
 - ciklai (for)
     - for
@@ -22,7 +22,7 @@ Busimos temos:
     - for in
     - kiti cikliski metodai
 - funkcijos
-    - function
+    + function
     - arrow function
     - class
 - ivykiai (events listeners)
