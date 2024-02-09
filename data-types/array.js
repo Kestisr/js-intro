@@ -95,3 +95,11 @@ console.log(marksAverage([10, 2, 8, 4, 6]), '->', 6);
 console.log(marksAverage([10, 10, 10, 10, 10]), '->', 10);
 console.log(marksAverage([1, 1, 1, 1, 1]), '->', 1);
 console.log(marksAverage([1, 2, 3, 4, 5]), '->', 3);
+
+console.clear();
+
+const workers = ['Romas', 'Edgaras', 'Saulius', 'Mantas', 'Gena', 'Jurate'];
+
+console.log('Darbuotojai:', workers.length);
+console.log('Darbuotojai:', workers[0]);
+

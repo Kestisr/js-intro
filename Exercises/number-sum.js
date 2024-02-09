@@ -36,16 +36,16 @@ function sumBetween(min, max) {
 }
 
 // Sum between 0 and 4 is 10;
-console.log(sumBetween(0, 4));
-console.log(sumBetween(0, 10));
-console.log(sumBetween(13, 15));
-console.log(sumBetween(0, 100));
-console.log(sumBetween(0, 1000));
-console.log(sumBetween(0, 10_000));
-console.log(sumBetween(0, 100_000));
-console.log(sumBetween(0, 1000_000));
-console.log(sumBetween(0, 10_000_000));
-console.log(sumBetween(0, 100_000_000));
+// console.log(sumBetween(0, 4));
+// console.log(sumBetween(0, 10));
+// console.log(sumBetween(13, 15));
+// console.log(sumBetween(0, 100));
+// console.log(sumBetween(0, 1000));
+// console.log(sumBetween(0, 10_000));
+// console.log(sumBetween(0, 100_000));
+// console.log(sumBetween(0, 1000_000));
+// console.log(sumBetween(0, 10_000_000));
+// console.log(sumBetween(0, 100_000_000));
 
 
 function correctBetween(max) {

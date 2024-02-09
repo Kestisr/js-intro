@@ -8,14 +8,14 @@ Busimos temos:
     + tekstas
     + logines reiksmes
     + undefined
-    - sąrašas
+    + sąrašas
     - objektas
 - salygos (if)
     + if
     + ternary
     - switch
 - ciklai (for)
-    - for
+    + for
     - while
     - do-while
     - for-of
