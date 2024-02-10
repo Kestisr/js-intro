@@ -1,80 +1,64 @@
 /*
 IF - reiksmiu palyginimas
 
-Sablonai:
+SABLONAI:
 if () {}
 if () {} else {}
 if () {} else if () {}
 if () {} else if () {} else {}
-if () {} else if () {} else {} ...
-if () {} else if () {} else {} ... {}
+if () {} ... else if () {} ...
+if () {} ... else if () {} ... else {}
 
-Palyginimo operatoriai:
-- visi: >,<,>=,<=,==,===,!=,!==;
-- naudotini: >,<,>=,<=,==,===,
-- nenaudotini: ==,!=;
-
+PALYGINIMO OPERATORIAI:
+- visi: >, <, >=, <=, ==, ===, !=, !==
+- naudotini: >, <, >=, <=, ===, !==
+- nenaudotini: ==, !=
 
 */
 
-const profesija = 'Studentas';
-const amzius = 22;
+const profesija = 'Barmenas';
+const amzius = 18;
 const amziausLimitas = 21;
 
 console.log('START');
 
 if (amzius >= amziausLimitas) {
-    console.log(profesija + ' Ko noresi? ');
+    console.log('Ko noresi? 😏');
 } else {
-    console.log(profesija + ' Sry ... Per mazai metuku :D');
+    console.log('Sorry...');
 }
 
-let msg = profesija + ' eina i barą...';
+let msg = profesija + ' ieina i bara...';
+console.log(msg);
 
 if (amzius >= amziausLimitas) {
-    msg = profesija + ' Tai ko noresi uzsisakyti?';
+    msg = 'Tai ko noresi uzsisakyti? 😏';
 } else {
-    msg = profesija + ' ... Tu gi vistiek neturi pinigu...';
+    msg = profesija + '... Tu gi vis vien neturi pinigu... 😎';
 }
 
 console.log(msg);
 
 console.log('END');
 
-
 console.clear();
 
-const win = 'vista';
-let msgWin = 'Tu neturi Windowsu???';
+const win = 'xp';
 
-/*
-if (win === '95') {
-    msgWin = ('Windows 95');
-} else {
-    msgWin = 'Neatpazinta OS...';
-}
-*/
-
-/*
-if (win === '95') {
-    msgWin = ('Windows 95');
-} else if (win === '98') {
-    msgWin = 'Windows 98';
-}
-*/
+let msgWin = 'Tu neturi windowsu??? 👀👀👀';
 
 if (win === '95') {
     msgWin = 'Windows 95';
-} else if (win === '98') {
-    msgWin = 'Windows 98';
 } else if (win === '98') {
     msgWin = 'Windows 98';
 } else if (win === 'xp') {
     msgWin = 'Windows XP';
 } else if (win === 'vista') {
     msgWin = 'Windows Vista';
+} else if (win === '10') {
+    msgWin = 'Windows 10';
 } else {
-    msgWin = 'Neatpazinta OS sistema';
+    msgWin = 'Neatpazinta OS...';
 }
 
 console.log(msgWin);
@@ -82,56 +66,45 @@ console.log(msgWin);
 console.clear();
 
 if ('4' == 4) {
-    console.log('Taip');
+    console.log('TAIP');
 } else {
-    console.log('Ne');
+    console.log('NE');
 }
+
 if ('4' === 4) {
-    console.log('Taip');
+    console.log('TAIP');
 } else {
-    console.log('Ne');
+    console.log('NE');
 }
 
-let a = 7;
-const b = 5;
-let msgAB = 'Default...';
-a += 1;
+const saskaita = 100;
+const isimti = 50;
 
-if (a = b) {
-    msgAB = 'Lygus';
+let msgAB = 'Inicijuojame bankine operacija...';
+
+if (saskaita >= isimti) {
+    msgAB = 'Stai tavo ' + isimti + ' pinigai';
 } else {
-    msgAB = 'Skirtingi';
+    msgAB = 'Tu tiek neturi, kiek nori issiimti...';
 }
 
-console.log(msgAB, a, b);
+console.log(msgAB);
+
+if ('4' === 2) {
+    console.log('taip');
+} else {
+    console.log('ne');
+}
 
 console.clear();
 
-// code nesting
+// Code nesting
 
-
-const diena = 2;
-// iki 11 val - pusryciu meniu
-// iki 16 val - pusryciu meniu
-// Po 16 val - pusryciu meniu
-
-const laikas = 17;
-
-
-if (diena === 1) {
-    if (laikas < 11) {
-        console.log('Pirmadienio meniu: rytas');
-    } else if (laikas < 16) console.log(
-        'Pirmadienio meniu: diena');
-} else {
-    if (laikas < 11) {
-        console.log('Standartinis meniu: rytas');
-    } else if (laikas < 16) {
-        console.log('Standartinis meniu: diena')
-    } else {
-        console.log('Standartinis meniu: vakaras');
-    }
-}
+const diena = 25;
+// Iki 11val - pusryciu meniu
+// Iki 16val - dienos meniu
+// Po 16val - vakaro meniu
+const laikas = 20;
 
 if (diena === 1) {
     if (laikas < 11) {
@@ -151,4 +124,20 @@ if (diena === 1) {
     } else {
         console.log('Standartinis meniu: vakaras');
     }
-}   
+}
+
+if (diena === 24 || diena === 25) {
+    console.log('Kaledinis meniu');
+} else if (diena === 1 && laikas < 11) {
+    console.log('Pirmos menesio dienos meniu: rytas');
+} else if (diena === 1 && laikas < 16) {
+    console.log('Pirmos menesio dienos meniu: diena');
+} else if (diena === 1) {
+    console.log('Pirmos menesio dienos meniu: vakaras');
+} else if (diena !== 1 && laikas < 11) {
+    console.log('Standartinis meniu: rytas');
+} else if (diena !== 1 && laikas < 16) {
+    console.log('Standartinis meniu: diena');
+} else if (diena !== 1) {
+    console.log('Standartinis meniu: vakaras');
+}
