@@ -17,10 +17,9 @@ PALYGINIMO OPERATORIAI:
 */
 
 const profesija = 'Barmenas';
-const amzius = 18;
+const amzius = 22;
 const amziausLimitas = 21;
 
-console.log('START');
 
 if (amzius >= amziausLimitas) {
     console.log('Ko noresi? 😏');
@@ -28,24 +27,21 @@ if (amzius >= amziausLimitas) {
     console.log('Sorry...');
 }
 
-let msg = profesija + ' ieina i bara...';
-console.log(msg);
+let msg = '';
 
 if (amzius >= amziausLimitas) {
-    msg = 'Tai ko noresi uzsisakyti? 😏';
+    msg = profesija + ': Tai ko noresi uzsisakyti? 😏';
 } else {
     msg = profesija + '... Tu gi vis vien neturi pinigu... 😎';
 }
 
 console.log(msg);
 
-console.log('END');
-
 console.clear();
 
-const win = 'xp';
+const win = xp;
 
-let msgWin = 'Tu neturi windowsu??? 👀👀👀';
+let msgWin = '';
 
 if (win === '95') {
     msgWin = 'Windows 95';
