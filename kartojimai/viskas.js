@@ -143,3 +143,38 @@ if (savaitesDiena === 'pirmadienis' && laikas < 11) {
 
 console.log(meniuMsg);
 
+
+console.clear();
+
+const tekstas = 'Multiplikatorius';
+const tekstasUpper = tekstas.toUpperCase();
+const raide = tekstasUpper[0];
+
+console.log(raide + '.');
+const textukas = 'Pomidorinis';
+const lower = textukas.toLowerCase();
+const upper = textukas.toUpperCase();
+
+
+console.log(upper);
+
+const firstLetter = textukas[0];
+console.log(firstLetter);
+
+const secondLetter = textukas[1];
+console.log(secondLetter);
+
+console.clear();
+
+const aaa = {
+    a: 10,
+    b: 16
+}
+console.log(aaa);
+
+const aaaCopy = aaa;
+console.log(aaaCopy);
+
+aaaCopy.a = 20;
+
+console.log(aaaCopy);
